@@ -22,6 +22,18 @@ cd /tmp/container-demo
 /tmp/venv/bin/cdemo_threshold /tmp/somewhere/image.nii.gz 150 /tmp/elsewhere/result_image.nii.gz
 ```
 
+## Create Singularity image
+
+```sh
+sudo singularity build container-demo.simg /tmp/container-demo/singularity/Singularity
+```
+
+## Use Singularity image
+
+```sh
+./container-demo.simg /tmp/somewhere/image.nii.gz 150 /tmp/elsewhere/result_image.nii.gz
+```
+
 ## Use command from DockerHub
 docker run --rm -v /tmp/somewhere:/tmp/somewhere -v /tmp/elsewhere:/tmp/elsewhere brainvisa/container-demo cdemo_threshold /tmp/somewhere/image.nii.gz 150 /tmp/elsewhere/result_image.nii.gz
 
