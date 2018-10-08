@@ -11,5 +11,3 @@ RUN git clone https://github.com/brainvisa/container-demo.git \
   && python setup.py install \
   && cd .. \
   && rm -Rf container-demo
-
-CMD /usr/local/bin/cdemo_threshold
