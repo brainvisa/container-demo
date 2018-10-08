@@ -1,4 +1,4 @@
-def threshold(image, threshold):
+def threshold_image(image, threshold):
     data = image.get_data()
     idx_on = data[:,:,:] >= threshold
     idx_off = data[:,:,:] < threshold

@@ -3,7 +3,7 @@
 import nibabel
 import sys
 
-from container_demo import threshold
+from container_demo import threshold_image
 
 
 file_in = sys.argv[1]
@@ -11,4 +11,5 @@ threshold = int(sys.argv[2])
 file_out = sys.argv[3]
 
 image = nibabel.load(file_in)
+threshold_image(image, threshold)
 nibabel.save(image, file_out)
