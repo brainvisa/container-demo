@@ -2,8 +2,6 @@ import os
 
 from setuptools import setup, find_packages
 
-print find_packages('python', 'python')
-
 setup(
     name='container_demo',
     version='1.0',
